@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: rgba(224, 211, 211, 0.674);
+
 }
 
 body{
     width: 100%;
     height: 100%;
+    background-color: rgba(224, 211, 211, 0.674);
+    height: 100%;
+    width: 100%;
 }
 /* navbar */
 .navbar {
@@ -47,12 +50,18 @@ h1 {
     box-shadow: 5px 5px #888888;
 }
 
+.alltableuser {
+    display: flex;
+    justify-content: center;
+}
+
 .tableuser {
     background-color: black;
     width: 30%;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 460px;
+    margin-top: 60px;
+    width: 50%;
+    
 }
 .tableuser tr th {
     background-color: lightgray;
@@ -60,3 +69,51 @@ h1 {
 .tableuser tr td {
     background-color: white;
 }
+
+.admin1 {
+    margin-top: 30px;
+}
+
+.admin1 h3 {
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.inputadmin {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.inputadmin input {
+    margin-left: 20px;
+    text-align: center;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px #888888;
+}
+
+.inputadmin button {
+    margin-left: 10px;
+    background-color: rgb(188, 188, 209);
+    color: black;
+    height: 30px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.alltableadmin {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+.tableuser button {
+    border-radius: 5px;
+}
+
+
+
+

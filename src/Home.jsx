@@ -2,6 +2,7 @@ import React from "react"
 import { useState } from "react"
 import { useEffect } from "react"
 import Navbar from "./Navbar"
+import "./index.css"
 
 
 const mockEmployees = [
@@ -57,7 +58,7 @@ const Home = () => {
 
 const User = ({employees}) => {
   return (
-    <div>
+    <div className="alltableuser">
       <table className="tableuser">
         <thead>
           <tr>
@@ -105,15 +106,16 @@ const Admin = ({employees,setEmployees}) => {
   }
 
   return (
-    <div>
+    <div className="admin1">
       <h3>Create User Here</h3>
-      <div>
+      <div className="inputadmin">
         <input onChange={(event) => setName(event.target.value)} type="text" placeholder="Name" />
         <input onChange={(event) => setLastname(event.target.value)} type="text" placeholder="Last name" />
         <input onChange={(event) => setPosition(event.target.value)}type="text" placeholder="Position" />
         <button onClick={handleAddClick}>save</button>
       </div>
-      <table>
+      <div className="alltableadmin">
+      <table className="tableuser">
         <thead>
           <tr>
             <th>Name</th>
@@ -134,7 +136,8 @@ const Admin = ({employees,setEmployees}) => {
             </tr>
           ))}
         </tbody>
-      </table>    
+      </table>   
+      </div> 
     </div>
   )
 }
